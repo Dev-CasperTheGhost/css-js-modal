@@ -106,6 +106,10 @@ body {
   background-color: var(--twitter-color);
 }
 
+.modal-extra {
+  padding-top: 20px;
+}
+
 .main-container {
   height: 100vh;
   display: flex;
