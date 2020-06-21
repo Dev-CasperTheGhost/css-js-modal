@@ -1,0 +1,127 @@
+:root {
+  --bg: #636364;
+  --gray: #343434;
+  --reddit-color: #0b0d0d;
+  --fb-color: #405896;
+  --twitter-color: #1da1f2;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.modal {
+  padding: 20px;
+  position: fixed;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: white;
+  width: 600px;
+  max-width: 90%; /* once screen becomes to small, the modal will only take up 90% of the screen */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  transition: all 0.4s ease-out;
+  z-index: 10;
+}
+
+.active {
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+}
+
+.close-modal {
+  outline: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 40px;
+}
+
+.modal-body {
+  padding: 10px;
+  text-align: center;
+}
+
+.modal-body h2 {
+  padding-bottom: 5px;
+  color: var(--gray);
+}
+
+.modal-body p {
+  padding-bottom: 5px;
+  color: var(--gray);
+}
+
+.btn-container {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.btn {
+  margin-top: 5px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn img {
+  width: 20px;
+  margin-right: 7px;
+}
+
+.fb {
+  background-color: var(--fb-color);
+  border: 1px solid var(--fb-color);
+}
+
+.reddit {
+  border: 1px solid var(--reddit-color);
+  background-color: var(--reddit-color);
+}
+
+.twitter {
+  border: 1px solid var(--twitter-color);
+  background-color: var(--twitter-color);
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container h4 {
+  color: white;
+  font-size: 40px;
+}
+
+.open-modal {
+  outline: none;
+  border: none;
+  background-color: #405896;
+  transition: all 0.3s;
+}

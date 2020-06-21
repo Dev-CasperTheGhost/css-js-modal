@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h4>Modal will open from the top</h4>
+      <button class="btn open-modal" onclick="openModal()">Open Modal</button>
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <button onclick="closeModal()" class="close-modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <h2>Share this article</h2>
+        <p>
+          If you liked this article share it with your friends. <br />
+          They will thank you later
+        </p>
+
+        <div class="btn-container">
+          <button class="btn fb">
+            <img src="./icons/facebook-brands.svg" alt="fb icon" />
+            Facebook
+          </button>
+          <button class="btn twitter">
+            <img src="./icons/twitter-brands.svg" alt="twitter icon" />
+            Twitter
+          </button>
+          <button class="btn reddit">
+            <img src="./icons/reddit-alien-brands.svg" alt="reddit" />
+            Reddit
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
